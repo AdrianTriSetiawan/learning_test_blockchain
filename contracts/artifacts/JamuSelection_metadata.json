@@ -1,0 +1,89 @@
+{
+	"compiler": {
+		"version": "0.8.28+commit.7893614a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "keluhan",
+						"type": "string"
+					}
+				],
+				"name": "getJamuByKeluhan",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"name": "jamuProducts",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/testingproduk.sol": "JamuSelection"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/testingproduk.sol": {
+			"keccak256": "0xd1f9cc00b5878d38d652c51030f92b53452ac381716aaad796bb0d62326fd8eb",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://cd255ea0523192f5c32708f3ba740de96b1cd8f1a4971c54255f3e063ba24f0f",
+				"dweb:/ipfs/QmSd8Wr3CAPhMVMo1W8diqyBY5s9VPjmiJGbo9uxKY4mBe"
+			]
+		}
+	},
+	"version": 1
+}

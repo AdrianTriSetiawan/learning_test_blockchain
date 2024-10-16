@@ -1,0 +1,58 @@
+{
+	"compiler": {
+		"version": "0.8.28+commit.7893614a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "getData",
+				"outputs": [
+					{
+						"internalType": "uint256[5]",
+						"name": "",
+						"type": "uint256[5]"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/arraycontract.sol": "ArrayContract"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/arraycontract.sol": {
+			"keccak256": "0x9a6bbd469b657b399cfd7fa7352185604bb705faa08d84a1063e61253c287c2a",
+			"urls": [
+				"bzz-raw://e4755cd5d9e8d146f7143603f0e4c19b88e4fd186252c57ea299bde4626a9445",
+				"dweb:/ipfs/QmckTe71pEZ6YvjyNeVWZVnEhHLYxwKrG2cd1gzLrc3onX"
+			]
+		}
+	},
+	"version": 1
+}

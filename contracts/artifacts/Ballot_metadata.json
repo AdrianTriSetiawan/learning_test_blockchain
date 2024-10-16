@@ -1,0 +1,232 @@
+{
+	"compiler": {
+		"version": "0.8.28+commit.7893614a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "string[]",
+						"name": "proposalNames",
+						"type": "string[]"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [],
+				"name": "chairperson",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "to",
+						"type": "address"
+					}
+				],
+				"name": "delegate",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "voter",
+						"type": "address"
+					}
+				],
+				"name": "giveRightToVote",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "proposals",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "name",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "voteCount",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "proposal",
+						"type": "uint256"
+					}
+				],
+				"name": "vote",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "voters",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "weight",
+						"type": "uint256"
+					},
+					{
+						"internalType": "bool",
+						"name": "voted",
+						"type": "bool"
+					},
+					{
+						"internalType": "address",
+						"name": "delegate",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "vote",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "winnerName",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "winnerName_",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "winningProposal",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "winningProposal_",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"details": "Menerapkan proses pemungutan suara dengan delegasi suara",
+			"kind": "dev",
+			"methods": {
+				"constructor": {
+					"details": "Membuat pemungutan suara baru untuk memilih salah satu dari 'proposalNames'.",
+					"params": {
+						"proposalNames": "nama-nama proposal"
+					}
+				},
+				"delegate(address)": {
+					"details": "Mendelegasikan suara Anda kepada pemilih 'to'.",
+					"params": {
+						"to": "alamat tujuan delegasi suara"
+					}
+				},
+				"giveRightToVote(address)": {
+					"details": "Memberikan 'voter' hak untuk memberikan suara dalam pemungutan ini. Hanya bisa dipanggil oleh 'chairperson'.",
+					"params": {
+						"voter": "alamat pemilih"
+					}
+				},
+				"vote(uint256)": {
+					"details": "Berikan suara Anda (termasuk suara yang didelegasikan kepada Anda) untuk proposal 'proposals[proposal].name'.",
+					"params": {
+						"proposal": "indeks proposal dalam array proposals"
+					}
+				},
+				"winnerName()": {
+					"details": "Memanggil fungsi winningProposal() untuk mendapatkan indeks dari pemenang yang terdapat dalam array proposals dan kemudian",
+					"returns": {
+						"winnerName_": "nama pemenang"
+					}
+				},
+				"winningProposal()": {
+					"details": "Menghitung proposal yang memenangkan pemungutan suara dengan mempertimbangkan semua suara yang telah diberikan.",
+					"returns": {
+						"winningProposal_": "indeks dari proposal yang menang dalam array proposals"
+					}
+				}
+			},
+			"title": "Pemungutan Suara (Ballot)",
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/struct.sol": "Ballot"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/struct.sol": {
+			"keccak256": "0xca3c7be80a9aacb79bae5e1f589ece40a52d955bb5f5e5727cb2ba614e39f4f8",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://30948b98935bf296d58ff9ed9c71fdbf9ec6a382e1f291b22a1b703f518784bc",
+				"dweb:/ipfs/QmPVpgDqsSWCW3s4VM2GbsbjXg3qPn7qRFfwYMyTpjfUza"
+			]
+		}
+	},
+	"version": 1
+}
